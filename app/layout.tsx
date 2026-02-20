@@ -27,11 +27,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-black text-white">
-        <Navbar />
-        <main className="mx-auto max-w-5xl px-6 py-10">{children}</main>
-        <Footer />
-      </body>
+  <body className="min-h-screen flex flex-col bg-black text-white">
+    <Navbar />
+
+    <main className="flex-1 mx-auto max-w-5xl px-6 py-10 w-full">
+      {children}
+    </main>
+
+    <Footer />
+  </body>
     </html>
   );
 }

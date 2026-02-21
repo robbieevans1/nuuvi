@@ -56,7 +56,7 @@ async function hasNsRecords(domain: string, timeoutMs = 1500) {
     }
 
     // ambiguous failures
-    return { registered: null as const, detail: String(code) as string, nsRecords: [] as string[] };
+    return { registered: null, detail: String(code) as string, nsRecords: [] as string[] };
   }
 }
 

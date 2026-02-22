@@ -1,6 +1,10 @@
 export function normalizeLabel(raw: string) {
   // keep letters, numbers, hyphens; lower-case
-  const cleaned = raw
+  if (raw.includes(".")) {
+    raw = raw.split(".")[0];
+  }
+  
+  const cleaned: string = raw
     .trim()
     .toLowerCase()
     .replace(/[^a-z0-9-]/g, "")
@@ -12,6 +16,8 @@ export function normalizeLabel(raw: string) {
 
   return cleaned;
 }
+
+
 
 export function buildDomain(label: string, tld: string) {
   return `${label}.${tld.toLowerCase().replace(/^\./, "")}`;

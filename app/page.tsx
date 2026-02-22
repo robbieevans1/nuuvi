@@ -39,7 +39,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-black text-white">
+    <main className="bg-black text-white">
     <div className="min-h-[70vh] flex flex-col items-center justify-center text-center gap-6">
       <h1 className="text-6xl font-bold">Nuuvi</h1>
 

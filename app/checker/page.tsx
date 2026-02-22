@@ -71,11 +71,10 @@ export default function CheckerPage() {
   };
 
   return (
-    <div>
-      <h1 className="text-6xl font-bold">Nuuvi</h1>
+    <div className="flex flex-col items-center bg-black py-4">
       <p className="text-neutral-300 text-lg">Domain Availability (NS Check)</p>
 
-      <div className="flex gap-3">
+      <div className="flex  gap-3">
         <input
           className="w-80 rounded bg-neutral-900 border border-neutral-800 px-3 py-2"
           placeholder="Enter a name..."
